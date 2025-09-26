@@ -1,134 +1,187 @@
 
 # 1. Contexte et objectifs
 
-Pourquoi développer un CRM maison plutôt que d’utiliser une solution existante ? Quels seraient les points différenciants par rapport à des solutions comme Zoho ?
+L’outil CRM vise à centraliser l’ensemble des activités de **support, déploiement, ADV et comptabilité** dans un environnement unique, modulable et adapté aux besoins spécifiques de l’entreprise (entre partenaires et clients).
 
-Objectifs principaux : centraliser l’information, automatiser les processus, améliorer le suivi client, faciliter la gestion technique et logistique, etc.
+Différences avec un CRM du marché (Zoho, Hubspot, etc.) :
 
-Compte tenu de la spécificité de notre positionnement — entre le partenaire et le client — nous avons besoin d’un outil entièrement modulable, adapté à nos besoins et, surtout, intuitif et facile à prendre en main.
+- Adaptation à nos process spécifiques (ADV + staging matériel + partenaires + interventions terrain).
+    
+- Vue **partenaire/clients/techniciens** croisée, impossible avec un CRM générique.
+    
+- **Interface simplifiée** et intuitive pour les rôles métiers (pas de menus génériques surchargés).
+    
+- **Planification techniciens + interventions** intégrée au cœur du CRM.
+    
 
+---
 
 # 2. Utilisateurs & Rôles
 
-👉 Définir pour chaque rôle ce qu’il peut voir, créer/éditer et valider/clôturer :
+👉 Chaque rôle a des permissions précises (CRUD + validation).
 
-- Admin – vision globale, gestion des partenaires/techniciens/rapports/support ☐  
+- **Admin** : vision globale, gestion des utilisateurs, partenaires, techniciens, rapports, logs, sécurité.
+    
+- **Support** : tickets (création, suivi, clôture/escalade).
+    
+- **Staging** : préparation matériel (stock, provisioning), suivi commandes.
+    
+- **ADV** : cycle complet devis → commande → livraison → planification → facturation.
+    
+- **Compta** : factures, paiements, relances, reporting CA/marge.
+    
+- **Techniciens internes/externes** : interventions terrain, PV signés, disponibilités.
+    
+- **Chefs de projet** : supervision interventions/projets, suivi qualité.
+    
+- **Partenaires** : accès restreint → leurs clients, tickets, commandes.
+    
 
-- Support – gestion des tickets ☐
-
-- Staging – préparation matériel, stock ☐
-
-- ADV –commandes, suivi technicien, employ du temps, gestion intervention ☐
-
-- Compta – factures, règlements, relances ☐
-
-- Déploiement/Installation – techniciens + interventions terrain ☐
-
-- Partenaire – suivi de ses clients, tickets, commandes ☐
-
+---
 
 # 3. Modules fonctionnels
 
 ## Gestion des clients
 
-- Fiches clients détaillées : coordonnées, contacts, historique, notes internes
+- Fiche client : coordonnées, SIRET/TVA, contacts, notes internes.
     
-- Plateformes/centrex associés + liens
+- Lien avec **partenaire** si le client vient d’un distributeur.
     
-- Historique interventions, tickets, commandes
+- Historique complet : interventions, tickets, commandes, factures.
     
-- Segmentation par secteur, taille, type (Pharmacie, Assurance, etc.)
-  
+- Segmentation : secteur, taille, type (pharmacie, assurance, etc.).
+    
+
 ## Tickets (Support)
 
-- Création par le support ou par partenaire
+- Création par support ou par partenaire.
     
-- Typologie (incident, demande, projet, SAV)
+- Typologie : incident / demande / projet / SAV.
     
-- Statuts (ouvert, en cours, résolu, escaladé, clos)
+- Statuts : ouvert, en cours, en attente client, résolu, clos, escaladé.
     
-- SLA (délai de traitement)
+- SLA : délais de traitement & alertes.
     
-- Attribution auto/manuelle au bon technician ( à verifier l’utiliter)
+- Attribution auto ou manuelle à un technicien interne/externe.
     
-- Recherche de client intelligent (par numéro, système prénom etc..)
- 
-## Commandes
+- Recherche intelligente client (par numéro, nom, système).
+    
+- Historique du ticket (traçabilité via journal).
+    
 
-- Saisie commande (produits, services, quantités)
+## Commandes (ADV)
+
+- Cycle complet : saisie → validation ADV → staging → expédition → installation → facturation.
     
-- Suivi étapes : saisie > validation ADV > staging > expédition > installation > facturation
+- Produits/services : catalogue (prix, coûts, TVA).
     
-- Mail auto au client à chaque étape clé  
-  
+- Notifications mail auto client aux étapes clés.
+    
+- Lien direct commandes → factures.
+    
+- Gestion des statuts (en attente, en préparation, livré, annulé).
+    
+
 ## Techniciens
 
-- Coordonnées, compétences, zones couvertes
+- Coordonnées, compétences, zones couvertes.
     
-- Tri par secteur et compétences
+- Disponibilités et plannings (intégration congés, absences).
     
-- Géolocalisation en temps réel (optionnel)
+- Géolocalisation (option).
     
-- Notation (ponctualité, qualité, efficacité)
+- Notation (ponctualité, qualité, efficacité).
     
-- Planning (disponibilités, congés, interventions)
+- Rattachement à interventions/tickets.
+    
 
-## Carte interactive
+## Planning & Carte interactive
 
-- Vue de France avec techniciens positionnés
+- Vue calendrier (jour/semaine/mois) des interventions.
     
-- Clients actifs et installations
+- Carte France : techniciens positionnés + clients actifs + tickets ouverts.
     
-- Tickets ouverts affichés en overlay
-  
+- Filtrage par technicien, statut, zone.
+    
+- Gestion des conflits de planning.
+    
+
+## Interventions
+
+- Création à partir d’un ticket/commande.
+    
+- Dates/heures + technicien(s) assignés.
+    
+- PV signé (client) + notes interne technicien + photos/documents.
+    
+- Checklists (contrôles qualité).
+    
 
 ## Communication & Notifications
 
-- Emails automatiques (commandes, interventions, clôture)
+- Emails automatiques (commandes, tickets, interventions, factures).
     
-- SMS de rappel
+- SMS de rappel (RDV, relance).
     
-- Notifications internes (alerte retard, escalade)
+- Notifications internes : retard, escalade, dépassement SLA.
+    
 
 ## Compta
 
-- Factures automatiques
+- Factures automatiques (basées sur commandes).
     
-- Gestion des paiements (statut payé/en attente)
+- Suivi paiements (statut payé, partiel, en attente).
     
-- Relances auto par mail
+- Relances automatiques par mail.
     
-- Tableaux de bord CA / marges
+- Tableaux de bord : CA, marges, impayés.
+    
+- Rattachement factures → paiements (rapprochement simple).
+    
 
 ## ADV
 
-- Cycle de commande complet : devis/BC, validation, staging (préparation/provisioning), expédition, livraison, planification des installations (date/heure), facturation (acomptes, solde, avoirs).
+- Gestion devis/commandes (quotes → orders).
     
-- Planification techniciens : gestion des emplois du temps (terrain & distants), créneaux, conflits, rappels.
+- Staging matériel (préparation, provisioning, stock).
     
-- Documents : devis, BC, BL, PV signé, facture/avoir (PDF brandés).
+- Suivi livraisons (transporteur, tracking).
     
-- Notifications : emails/SMS aux clients et internes aux jalons clés.
+- Planification techniciens (emplois du temps, créneaux, rappels).
+    
+- Documents : devis, BC, BL, PV signé, facture/avoir (générés en PDF).
+    
+- Notifications clients (mail/SMS) aux étapes clés.
+    
+
+---
 
 # 4. Modules transverses
 
-- Recherche globale (tickets, clients, techniciens, commandes)
+- **Recherche globale** : clients, tickets, commandes, techniciens.
     
-- Statistiques & Dashboard (par rôle)
+- **Dashboard/statistiques** : adaptés par rôle (support = tickets SLA, ADV = commandes/factures, Compta = CA/marge).
     
-- RGPD & sécurité (logs, droits d’accès, cryptage mots de passe)
+- **RGPD & sécurité** : logs actions, droits d’accès fins, cryptage mots de passe.
     
-- Mobile friendly (techniciens sur le terrain)
+- **Mobile friendly** : interface techniciens (planning, signature PV, documents).
+    
+- **Audit logs** : actions, connexions, IP, sessions.
+    
 
-# 5. Suggestions utiles pour plus tard 💡
+---
 
-- Gestion des stocks (matériel staging, dispo live)
+# 5. Suggestions évolutives 💡
+
+- Gestion de **stocks** (matériel staging).
     
-- Chat interne (mini Slack interne)
+- Chat interne (type Slack simplifié).
     
-- Suivi des contrats de maintenance (dates renouvellement, alertes expirations)
+- Suivi **contrats de maintenance** (dates, alertes, SLA).
     
-- IA de pré-support (IA qui analyse la demande client et la clarifie/met rrapidement sur une piste de resolution)
+- IA de pré-support : classification tickets, suggestions de résolution.
+    
+- Module marketing (campagnes, leads, opportunités, suivi conversion).
   
   
   ## Tableau des droits Simplifiée

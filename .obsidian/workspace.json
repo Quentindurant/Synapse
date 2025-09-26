@@ -1,0 +1,247 @@
+{
+  "main": {
+    "id": "c3a3b8654a0232b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "e476b791eab07908",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "883bc39cddfed75d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Intro cours/CDC Kayouno.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CDC Kayouno"
+            }
+          },
+          {
+            "id": "47844a97fb82e587",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Doc/Datas to collect MLD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Datas to collect MLD"
+            }
+          },
+          {
+            "id": "4a80102a3ce59dbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8b3d8aaf717cf59e",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c327b168cd6a89b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de34936522f29625",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "96c08ef1514639b4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": " ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4be6e512827a6df4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "4734e0568893b899",
+    "type": "split",
+    "children": [
+      {
+        "id": "143eb0dd4933b3a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df370bd6e92142dd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Intro cours/Cahier des charges_nathan_leo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Cahier des charges_nathan_leo"
+            }
+          },
+          {
+            "id": "614f57f63a65cc38",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Intro cours/Cahier des charges_nathan_leo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Cahier des charges_nathan_leo"
+            }
+          },
+          {
+            "id": "009b34fd405b3f45",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e6cce7179afbf3e8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Intro cours/Cahier des charges_nathan_leo.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Cahier des charges_nathan_leo"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "47844a97fb82e587",
+  "lastOpenFiles": [
+    "Doc/Cahier des charges – CRM GC Développement.md",
+    "Doc/COMPRENDRE LES ADVS mdr.md",
+    "Doc/Datas to collect MCD.md",
+    "Entreprise/Synapse/Doc/COMPRENDRE LES ADVS mdr.md",
+    "Doc/Datas to collect MLD.md",
+    "Doc",
+    "Entreprise/Projet perso",
+    "Cours/Conterisation/Pasted image 20250915094916.png",
+    "Entreprise/Synapse/Doc/Datas to collect MCD.md",
+    "Entreprise/Synapse/Doc/Datas to collect MLD.md",
+    "Entreprise/Synapse/Doc/Cahier des charges – CRM GC Développement.md",
+    "Entreprise/Synapse/Doc",
+    "Entreprise/Classe CRM.md",
+    "Entreprise/Synapse",
+    "Cours/SQL/SQL RAPPEL.md",
+    "Cours/Conception Logiciel/UML.md",
+    "Cours/GIT/Cours de GIT.md",
+    "Cours/GIT",
+    "Entreprise/Diagramme_Cas_Utilisation_CRMGC.drawio",
+    "Cours/Conception Logiciel/Pasted image 20250918101802.png",
+    "Cours/Conception Logiciel/Pasted image 20250918094520.png",
+    "Cours/Conception Logiciel/Pasted image 20250918093223.png",
+    "Cours/Conterisation/IA.md",
+    "Cours/Conterisation/Cours 2VM.md",
+    "Cours/Conterisation/Cours 1.md",
+    "Cours/Conception Logiciel/Pasted image 20250918094647.png",
+    "Cours/Conception Logiciel/Pasted image 20250918094557.png",
+    "Cours/Conception Logiciel/Pasted image 20250918092221.png",
+    "Cours/Conception Logiciel/Pasted image 20250918092737.png",
+    "Cours/Conception Logiciel/Pasted image 20250918092614.png",
+    "Cours/Conception Logiciel/Pasted image 20250918092342.png",
+    "Untitled.md",
+    "Cours/Conception Logiciel",
+    "Cours/SQL",
+    "Cours/Intro cours/Untitled.md",
+    "Cours/Conterisation",
+    "Cours",
+    "Cours/Intro cours/CDC Kayouno.md",
+    "Untitled.canvas",
+    "Cours/Intro cours/Crazy Dev.md",
+    "Cours/Intro cours/info Kayouno.md",
+    "Intro cours/Cahier des charges_nathan_leo.md",
+    "Welcome.md"
+  ]
+}
